@@ -3,43 +3,70 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Daily Data Show - Dashboards</title>
+<title>The Daily Data Show — MLB Dashboards</title>
 <style>
-body { font-family: -apple-system, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; background: #1a1a2e; color: #e0e0e0; }
-h1 { color: #00d4ff; }
-a { color: #00d4ff; }
-.week { margin: 20px 0; padding: 15px; background: #16213e; border-radius: 8px; }
-.week h2 { margin-top: 0; }
-ul { list-style: none; padding: 0; }
-li { padding: 5px 0; }
-li a { text-decoration: none; }
-li a:hover { text-decoration: underline; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0d1117; color: #c9d1d9; margin: 0; padding: 20px; }
+  .container { max-width: 900px; margin: 0 auto; }
+  h1 { color: #58a6ff; border-bottom: 1px solid #30363d; padding-bottom: 16px; }
+  h2 { color: #79c0ff; margin-top: 32px; }
+  h3 { color: #8b949e; font-size: 16px; margin: 16px 0 8px; }
+  .week { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 20px; margin: 16px 0; }
+  ul { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 8px; }
+  li a { display: block; padding: 10px 16px; background: #21262d; border-radius: 6px; color: #58a6ff; text-decoration: none; transition: background 0.2s; }
+  li a:hover { background: #30363d; }
+  .date-badge { display: inline-block; background: #1f6feb; color: #fff; padding: 4px 12px; border-radius: 12px; font-size: 14px; margin-left: 8px; }
 </style>
 </head>
 <body>
-<h1>The Daily Data Show - Interactive Dashboards</h1>
-<p>MLB日本人選手のStatcastデータをインタラクティブに可視化したダッシュボード集です。</p>
+<div class="container">
+<h1>The Daily Data Show — MLB Player Dashboards</h1>
+<p>日本人MLB選手のStatcastデータを可視化したインタラクティブダッシュボード</p>
+
 <div class="week">
-<h2>2026-04-12 (4/5〜4/11)</h2>
+<h2>Week 2 <span class="date-badge">2026-04-19</span></h2>
 <h3>Batters</h3>
 <ul>
-<li><a href="2026-04-12/shohei_ohtani_batter.html">大谷翔平（打者）</a></li>
-<li><a href="2026-04-12/seiya_suzuki.html">鈴木誠也</a></li>
-<li><a href="2026-04-12/masataka_yoshida.html">吉田正尚</a></li>
-<li><a href="2026-04-12/kazuma_okamoto.html">岡本和真</a></li>
-<li><a href="2026-04-12/munetaka_murakami.html">村上宗隆</a></li>
+  <li><a href="2026-04-19/shohei_ohtani_batter.html">大谷翔平（打者）/ Shohei Ohtani</a></li>
+  <li><a href="2026-04-19/munetaka_murakami.html">村上宗隆 / Munetaka Murakami</a></li>
+  <li><a href="2026-04-19/masataka_yoshida.html">吉田正尚 / Masataka Yoshida</a></li>
+  <li><a href="2026-04-19/seiya_suzuki.html">鈴木誠也 / Seiya Suzuki</a></li>
+  <li><a href="2026-04-19/kazuma_okamoto.html">岡本和真 / Kazuma Okamoto</a></li>
 </ul>
 <h3>Pitchers</h3>
 <ul>
-<li><a href="2026-04-12/shohei_ohtani_pitcher.html">大谷翔平（投手）</a></li>
-<li><a href="2026-04-12/roki_sasaki.html">佐々木朗希</a></li>
-<li><a href="2026-04-12/kodai_senga.html">千賀滉大</a></li>
-<li><a href="2026-04-12/shota_imanaga.html">今永昇太</a></li>
-<li><a href="2026-04-12/yoshinobu_yamamoto.html">山本由伸</a></li>
-<li><a href="2026-04-12/yusei_kikuchi.html">菊池雄星</a></li>
-<li><a href="2026-04-12/tomoyuki_sugano.html">菅野智之</a></li>
-<li><a href="2026-04-12/tatsuya_imai.html">今井達也</a></li>
+  <li><a href="2026-04-19/shohei_ohtani_pitcher.html">大谷翔平（投手）/ Shohei Ohtani</a></li>
+  <li><a href="2026-04-19/shota_imanaga.html">今永昇太 / Shota Imanaga</a></li>
+  <li><a href="2026-04-19/yoshinobu_yamamoto.html">山本由伸 / Yoshinobu Yamamoto</a></li>
+  <li><a href="2026-04-19/roki_sasaki.html">佐々木朗希 / Roki Sasaki</a></li>
+  <li><a href="2026-04-19/tomoyuki_sugano.html">菅野智之 / Tomoyuki Sugano</a></li>
+  <li><a href="2026-04-19/yusei_kikuchi.html">菊池雄星 / Yusei Kikuchi</a></li>
+  <li><a href="2026-04-19/kodai_senga.html">千賀滉大 / Kodai Senga</a></li>
 </ul>
+</div>
+
+<div class="week">
+<h2>Week 1 <span class="date-badge">2026-04-12</span></h2>
+<h3>Batters</h3>
+<ul>
+  <li><a href="2026-04-12/shohei_ohtani_batter.html">大谷翔平（打者）/ Shohei Ohtani</a></li>
+  <li><a href="2026-04-12/munetaka_murakami.html">村上宗隆 / Munetaka Murakami</a></li>
+  <li><a href="2026-04-12/masataka_yoshida.html">吉田正尚 / Masataka Yoshida</a></li>
+  <li><a href="2026-04-12/seiya_suzuki.html">鈴木誠也 / Seiya Suzuki</a></li>
+  <li><a href="2026-04-12/kazuma_okamoto.html">岡本和真 / Kazuma Okamoto</a></li>
+</ul>
+<h3>Pitchers</h3>
+<ul>
+  <li><a href="2026-04-12/shohei_ohtani_pitcher.html">大谷翔平（投手）/ Shohei Ohtani</a></li>
+  <li><a href="2026-04-12/shota_imanaga.html">今永昇太 / Shota Imanaga</a></li>
+  <li><a href="2026-04-12/yoshinobu_yamamoto.html">山本由伸 / Yoshinobu Yamamoto</a></li>
+  <li><a href="2026-04-12/roki_sasaki.html">佐々木朗希 / Roki Sasaki</a></li>
+  <li><a href="2026-04-12/tomoyuki_sugano.html">菅野智之 / Tomoyuki Sugano</a></li>
+  <li><a href="2026-04-12/yusei_kikuchi.html">菊池雄星 / Yusei Kikuchi</a></li>
+  <li><a href="2026-04-12/kodai_senga.html">千賀滉大 / Kodai Senga</a></li>
+  <li><a href="2026-04-12/tatsuya_imai.html">今井達也 / Tatsuya Imai</a></li>
+</ul>
+</div>
+
 </div>
 </body>
 </html>
